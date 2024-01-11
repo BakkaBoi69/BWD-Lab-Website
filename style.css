@@ -5,6 +5,7 @@
 [data-theme="black"] {
 	--gradient-start: #f8ff34;
     --gradient-end: #ff1b73;
+    --border-colour: rgb(180, 2, 183);
 }
 
 html {
@@ -39,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(180, 2, 183);
+    border-bottom: 2px solid var(--border-colour);
 }
 
 .header-links {
@@ -48,11 +49,11 @@ body {
     justify-content: space-between;
     gap: 30px;
     padding: 0 2vh;
-    border-left: 2px solid rgb(180, 2, 183);
+    border-left: 2px solid var(--border-colour);
     min-height: 100%;
 }
 
-.page-name, .header-links > a, .sidebar > h3, .card-text, .card-title {
+.page-name, .header-links > a, h3, .card-text, .card-title, .sidebar > ul > li > a {
     background: -webkit-linear-gradient(var(--gradient-start), var(--gradient-end));
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,7 +71,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 10%;
-    border-right: 2px solid rgb(180, 2, 183);
+    border-right: 2px solid var(--border-colour);
     min-height: 100vh;
     flex-grow: 1;
 }
@@ -86,13 +87,6 @@ body {
 }
 
 
-.sidebar > ul > li > a {
-    background: -webkit-linear-gradient(#ff1b73, #f8ff34);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .inner-wrapper {
     display: flex;
     flex-direction: column;
@@ -102,11 +96,28 @@ body {
 
 .content {
     display: flex;
+    flex-direction: column;
     color: #fff;
-    padding: 2vh 2vh;
-    justify-content: center;
-    min-width: 100%;
+    padding: 2vh;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-grow: 1;
+}
+
+.sidebar > ul > li > a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar > ul > li > a:hover {
+    text-decoration: var(--border-colour) underline;
+    transition: 0.5s ease-in-out;
+}
+
+.my-card-table > tbody > tr {
+    display: flex;
+    gap: 40px;
 }
 
 .card {
@@ -148,5 +159,5 @@ body {
 
 .footer > a {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
