@@ -39,17 +39,17 @@ body {
     border-bottom: 2px solid var(--border-colour);
 }
 
-.header-links {
+.header-searchbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     padding: 0 2vh;
     border-left: 2px solid var(--border-colour);
     min-height: 100%;
 }
 
-.page-name, .header-links > a, h3, .card-text, .card-title, .sidebar > ul > li > a {
+.page-name, .header-searchbar > input, .header-searchbar > button, h3, .card-text, .card-title, .sidebar > ul > li > a {
     background: -webkit-linear-gradient(var(--gradient-start), var(--gradient-end));
     background-clip: text;
     -webkit-background-clip: text;
@@ -151,6 +151,7 @@ body {
     border-top: 2px solid rgb(180, 2, 183);
     min-height: 5%;
     width: 100%;
+    justify-content: center;
 }
 
 .footer > a {
