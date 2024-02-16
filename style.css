@@ -7,6 +7,8 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    height: 100%; /* make sure the body is full height */
+    margin: 0; /* remove default margin */
 }
 
 ::-webkit-scrollbar {
@@ -22,8 +24,8 @@ body {
     display: flex;
     background-color: #000;
     color: #fff;
-    margin: 0;
-    min-height: 100%;
+    margin: 0; /* make sure the body is full height */
+    height: 100%; /* remove default margin */
 }
 
 .wrapper {
@@ -108,7 +110,7 @@ body {
     padding: 2vh;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .sidebar a, .footer > a {
@@ -155,6 +157,11 @@ body {
     -webkit-filter: grayscale(0);
     filter: none;
 }
+
+svg {
+    width: 100%;  /* Scale the width to fit the container */
+    height: auto; /* Adjust the height automatically to maintain the 1:1 aspect ratio */
+}  
 
 .footer {
     display: flex;

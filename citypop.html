@@ -2,19 +2,73 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" />
+        <title>Home Page</title>
     </head>
-    <body>
-        <h1>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-            culpa repellendus repellat suscipit unde sapiente error eius sit eum
-            recusandae. Dignissimos porro fuga doloremque cumque iusto, dolores,
-            iste magni totam dolor, numquam consequuntur aut officia obcaecati
-            sint optio reiciendis? Impedit, inventore aspernatur! Inventore
-            fugit, sapiente, quod ad, aspernatur quaerat est sequi vel qui iusto
-            tempore placeat unde quasi perspiciatis. Beatae quos quo sed aliquam
-            totam consectetur dolores reprehenderit quibusdam?
-        </h1>
+    <body data-theme="black">
+        <div class="wrapper">
+            <div class="header">
+                <a href="./index.html"
+                    ><img
+                        class="logo"
+                        src="./images/logo.avif"
+                        height="100"
+                        alt="Image of palm tree in sunset"
+                /></a>
+                <h1 class="page-name">My Music Wiki</h1>
+                <div class="header-searchbar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button type="submit" id="search-button">Search</button>
+                </div>
+            </div>
+            <div class="outer-wrapper">
+                <div class="sidebar">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="./citypop.html">Tatsuro Yamashita</a></li>
+                        <li><a href="./jazz-fusion.html">Meiko Nakahara</a></li>
+                        <li><a href="./jazz-fusion.html">Minako Yoshida</a></li>
+                        <li><a href="./jazz-fusion.html">Anri</a></li>
+                    </ul>
+                </div>
+                <div class="inner-wrapper">
+                    <div class="content">
+                        <h3>Artists</h3>
+                        <table class="my-card-table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a class="my-card-link" href="./citypop.html">
+                                            <div class="card">
+                                                <img src="./images/citypop6.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">City Pop</h5>
+                                                        <p class="card-text">A vibrant fusion of retro and contemporary, echoing the soulful heartbeat of urban Japan.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a class="my-card-link" href="./citypop.html">
+                                            <div class="card">
+                                                <img src="./images/casiopea-mint-jams.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Jazz Fusion</h5>
+                                                        <p class="card-text">A dynamic blend of sophisticated improvisation, intricate rhythms, and electronic experimentation.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="footer">
+                        <a href="./about-me.html">About me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
