@@ -51,7 +51,7 @@ body {
     min-height: 100%;
 }
 
-.page-name, .header-searchbar > input, .header-searchbar > button, h3, .card-text, .card-title, .sidebar > ul > li > a, .footer > a{
+.page-name, .header-searchbar > input, .header-searchbar > button, h3, .card-text, .card-title, .sidebar > ul > li > a, .footer > a, .content p{
     background: -webkit-linear-gradient(var(--gradient-start), var(--gradient-end));
     background-clip: text;
     -webkit-background-clip: text;
@@ -100,7 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 .content {
