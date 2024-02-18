@@ -40,6 +40,13 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid var(--border-colour);
+    position: relative; /* Needed as a reference for the absolute positioning of page-name */
+}
+
+.page-name {
+    position: absolute; /* Position the element absolutely within its relative parent */
+    left: 50%; /* Move to the middle */
+    transform: translateX(-50%); /* Offset by half its width to truly center */
 }
 
 .header-searchbar {
@@ -80,6 +87,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 10%;
+    padding: 1% 1% 0;
     border-right: 2px solid var(--border-colour);
     min-height: 100vh;
     flex-grow: 0;
